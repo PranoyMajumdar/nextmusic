@@ -27,31 +27,32 @@ A Music cog for discord.py with awesome music commands
 ## Usage/Examples
 
 ```py
-import discord, nextmusic
-from discord.ext import commands
+import nextcord
+from nextcord.ext import commands
 from nextmusic.ext import Intents
 
-bot = commands.Bot(command_prefix='!', intents=Intents.intents, case_insencitive=True)
 
-bot.description = "A music bot with awesome music commands" #Your bot description
+TOKEN = 'Your bot token'
+PREFIX = '!' # Your Bot Prefix
 
-bot.embed_colour = 0x00FF13 #Your bot embed colour
-
-bot.invite_link = "https://araki.social" #Your bot invite link
-
-bot.support_server = "https://araki.social/support" # Your bot support server link
+nextmusic = commands.Bot(command_prefix=PREFIX, intents=Intents().intents, case_insensitive=True)
 
 
-bot.lavalink_nodes = [
-    {"host": "losingtime.dpaste.org", "port": 2124, "password": "SleepingOnTrains"},
-    # Can have multiple nodes here
+nextmusic.lavalink_nodes = [
+    {
+        "host": "losingtime.dpaste.org", "port": 2124, "password": "SleepingOnTrains"
+    },
 ]
 
+nextmusic.description ='A music bot powered by nextmusic.'
+nextmusic.invite_link='https://araki.social/invite'
+nextmusic.support_server_url='https://araki.social/support'
+nextmusic.embed_colour = 0x303236
 
-bot.load_extension('nextmusic')
-bot.run('You Bot Token ')
 
 
+nextmusic.load_extension('nextmusic')
+nextmusic.run(TOKEN)
 ```
 
 
