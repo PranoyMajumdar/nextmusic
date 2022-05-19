@@ -32,18 +32,17 @@ from nextcord.ext import commands
 from nextmusic.ext import Intents
 
 
-TOKEN = 'Your bot token'
+TOKEN = 'Your Token'
 PREFIX = '!' # Your Bot Prefix
 
 nextmusic = commands.Bot(command_prefix=PREFIX, intents=Intents().intents, case_insensitive=True)
-
-
+nextmusic.mongo_url = 'mongodb+srv://pranoypvt:LgyKORY7P4lndor1@cluster0.dwtii.mongodb.net/?retryWrites=true&w=majority'
 nextmusic.lavalink_nodes = [
     {
         "host": "losingtime.dpaste.org", "port": 2124, "password": "SleepingOnTrains"
     },
 ]
-
+nextmusic.mongo_uri = '' # Add mongodb url for auto reconnext vc when bot restart
 nextmusic.description ='A music bot powered by nextmusic.'
 nextmusic.invite_link='https://araki.social/invite'
 nextmusic.support_server_url='https://araki.social/support'
@@ -52,8 +51,7 @@ nextmusic.embed_colour = 0x303236
 
 
 nextmusic.load_extension('nextmusic')
-nextmusic.run(TOKEN)
-```
+nextmusic.run(TOKEN)```
 
 
 ## Support
