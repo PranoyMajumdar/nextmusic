@@ -32,18 +32,20 @@ from nextcord.ext import commands
 from nextmusic.ext import Intents
 
 
-TOKEN = 'Add your bot token!'
+TOKEN = 'Add your bot token here!'
 PREFIX = '!' # Your Bot Prefix
 
 nextmusic = commands.Bot(command_prefix=PREFIX,intents=Intents.intents,case_insensitive=True)
 
-nextmusic.mongo_url = '' # If you want auto reconnect & 24/7 feature then add mongodb url
+nextmusic.mongo_url = 'If you want auto reconnect & 24/7 feature then add mongodb url'
 
 nextmusic.lavalink_nodes = [
     {
         "host": "losingtime.dpaste.org", "port": 2124, "password": "SleepingOnTrains"
     },
 ]
+
+
 
 nextmusic.spotify_credentials = {
     "client_id": "CLIENT_ID_HERE",
