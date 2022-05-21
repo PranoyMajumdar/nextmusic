@@ -70,5 +70,3 @@ nextmusic.run(TOKEN)
 <a href='https://araki.social/support'>
   <img src="https://discordapp.com/api/guilds/882441738713718815/widget.png?style=banner4" width="200" />
 </a>
-![Discord Banner 4](https://discordapp.com/api/guilds/882441738713718815/widget.png?style=banner4)(https://araki.social/support)
-[Devlopement Server](https://araki.social/support)
