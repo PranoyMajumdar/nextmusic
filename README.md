@@ -67,5 +67,8 @@ nextmusic.run(TOKEN)
 
 
 ## Support
+<a href="https://www.youtube.com/youtube-id">
+  <img src="https://placehold.it/350x350" width="200" />
+</a>
 ![Discord Banner 4](https://discordapp.com/api/guilds/882441738713718815/widget.png?style=banner4)(https://araki.social/support)
 [Devlopement Server](https://araki.social/support)
