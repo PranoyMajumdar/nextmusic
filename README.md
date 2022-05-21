@@ -53,7 +53,6 @@ nextmusic.spotify_credentials = {
 }
 
 
-nextmusic.mongo_url = ''
 nextmusic.description ='A music bot powered by nextmusic.'
 nextmusic.invite_link='https://araki.social/invite'
 nextmusic.support_server_url='https://araki.social/support'
