@@ -67,5 +67,5 @@ nextmusic.run(TOKEN)
 
 
 ## Support
-
+![Discord Banner 4](https://discordapp.com/api/guilds/[882441738713718815]/widget.png?style=banner4)
 [Devlopement Server](https://araki.social/support)
